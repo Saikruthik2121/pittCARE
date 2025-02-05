@@ -5,7 +5,6 @@ A user specifies the type of concurrent reading mechanism for the files: Round R
 Data Structure
 Transaction table: A map between a filename and TransactionDetails. Once a transaction is committed or aborted, the entry is removed from the transaction table
 Open files: List of all the open files. Once a file is terminated, or a transaction is committed or aborted, the entry is removed from this list
-
 class TransactionDetails{
     int transactionID,
     int lineNumberRead,
